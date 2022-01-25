@@ -11,6 +11,10 @@
 		7D669D09279F41CB00E8586E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D669D08279F41CB00E8586E /* ContentView.swift */; };
 		7D669D0B279F41CD00E8586E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D669D0A279F41CD00E8586E /* Assets.xcassets */; };
 		7D669D0E279F41CD00E8586E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D669D0D279F41CD00E8586E /* Preview Assets.xcassets */; };
+		7D669D16279F41F600E8586E /* Champ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D669D15279F41F600E8586E /* Champ.swift */; };
+		7D669D18279F471800E8586E /* ChampsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D669D17279F471800E8586E /* ChampsViewModel.swift */; };
+		7D669D1A279F49AA00E8586E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D669D19279F49AA00E8586E /* CardView.swift */; };
+		7D669D1C279F510400E8586E /* ChampDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D669D1B279F510400E8586E /* ChampDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		7D669D08279F41CB00E8586E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D669D0A279F41CD00E8586E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D669D0D279F41CD00E8586E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D669D15279F41F600E8586E /* Champ.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Champ.swift; sourceTree = "<group>"; };
+		7D669D17279F471800E8586E /* ChampsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampsViewModel.swift; sourceTree = "<group>"; };
+		7D669D19279F49AA00E8586E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7D669D1B279F510400E8586E /* ChampDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,9 @@
 		7D669D05279F41CB00E8586E /* League Champs */ = {
 			isa = PBXGroup;
 			children = (
-				7D669D06279F41CB00E8586E /* League_ChampsApp.swift */,
-				7D669D08279F41CB00E8586E /* ContentView.swift */,
+				7D69303A27A0628900857313 /* SupportFiles */,
+				7D69303927A0627000857313 /* API */,
+				7D669D14279F41E100E8586E /* InitialScene */,
 				7D669D0A279F41CD00E8586E /* Assets.xcassets */,
 				7D669D0C279F41CD00E8586E /* Preview Content */,
 			);
@@ -65,6 +74,49 @@
 				7D669D0D279F41CD00E8586E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D669D14279F41E100E8586E /* InitialScene */ = {
+			isa = PBXGroup;
+			children = (
+				7D69303727A0625A00857313 /* Views */,
+				7D69303827A0626800857313 /* ViewModels */,
+			);
+			path = InitialScene;
+			sourceTree = "<group>";
+		};
+		7D69303727A0625A00857313 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D669D19279F49AA00E8586E /* CardView.swift */,
+				7D669D1B279F510400E8586E /* ChampDetails.swift */,
+				7D669D08279F41CB00E8586E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D69303827A0626800857313 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7D669D17279F471800E8586E /* ChampsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7D69303927A0627000857313 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7D669D15279F41F600E8586E /* Champ.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		7D69303A27A0628900857313 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7D669D06279F41CB00E8586E /* League_ChampsApp.swift */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D669D18279F471800E8586E /* ChampsViewModel.swift in Sources */,
+				7D669D16279F41F600E8586E /* Champ.swift in Sources */,
 				7D669D09279F41CB00E8586E /* ContentView.swift in Sources */,
 				7D669D07279F41CB00E8586E /* League_ChampsApp.swift in Sources */,
+				7D669D1C279F510400E8586E /* ChampDetails.swift in Sources */,
+				7D669D1A279F49AA00E8586E /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
